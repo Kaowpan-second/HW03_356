@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             x:Class="HW03_1640705834.SplashPage"
+             Title="SplashPage"
+             BackgroundColor="#FFFFFF">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFFFFF" Offset="0.1" />
+            <GradientStop Color="#746B94" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
+    <VerticalStackLayout>
+        <skia:SKLottieView Source="cat.json"
+            RepeatCount="-1" WidthRequest="400" HeightRequest="400"/>
+
+
+        <Label 
+            Text="Loading..."
+            FontAttributes="Bold"
+            FontSize="24"
+            TextColor="#000000"
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
